@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
   const products = await Product.findAll().catch((err)=> {
     res.json(err);
   });
-  res.json(userData);
+  res.json(products);
 });
 
 
